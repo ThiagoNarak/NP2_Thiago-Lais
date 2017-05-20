@@ -1,0 +1,66 @@
+?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="911.0" y="1011.0">com.example.thiago.alunomapa.MapsActivity</node>
+    <node x="651.0" y="1011.0">com.example.thiago.alunomapa.MenuActivity</node>
+    <node x="0.0" y="660.0">com.example.thiago.alunomapa.DiciplinasActivity</node>
+    <node x="533.0" y="782.0">com.example.thiago.alunomapa.MostrarDiciplinasActivity</node>
+    <node x="215.375" y="0.0">com.example.thiago.alunomapa.Diciplinas</node>
+    <node x="853.1997621878718" y="65.66587395957194">com.example.thiago.alunomapa.CadastroActivity</node>
+    <node x="0.0" y="1011.0">com.example.thiago.alunomapa.matrizActivity</node>
+    <node x="677.0" y="385.0">com.example.thiago.alunomapa.Curso</node>
+    <node x="348.0" y="1011.0">com.example.thiago.alunomapa.MainActivity</node>
+    <node x="222.0" y="276.0">com.example.thiago.alunomapa.Banco</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.thiago.alunomapa.Banco" target="com.example.thiago.alunomapa.Diciplinas">
+      <point x="0.0" y="-167.0" />
+      <point x="439.5" y="256.0" />
+      <point x="381.625" y="256.0" />
+      <point x="33.25" y="113.0" />
+    </edge>
+    <edge source="com.example.thiago.alunomapa.Curso" target="com.example.thiago.alunomapa.Diciplinas">
+      <point x="0.0" y="-58.0" />
+      <point x="791.5" y="256.0" />
+      <point x="448.125" y="256.0" />
+      <point x="99.75" y="113.0" />
+    </edge>
+    <edge source="com.example.thiago.alunomapa.DiciplinasActivity" target="com.example.thiago.alunomapa.Diciplinas">
+      <point x="-64.125" y="-153.0" />
+      <point x="192.375" y="635.0" />
+      <point x="197.33928571428572" y="635.0" />
+      <point x="197.33928571428572" y="256.0" />
+      <point x="315.125" y="256.0" />
+      <point x="-33.25" y="113.0" />
+    </edge>
+    <edge source="com.example.thiago.alunomapa.MostrarDiciplinasActivity" target="com.example.thiago.alunomapa.Banco">
+      <point x="0.0" y="-31.0" />
+      <point x="642.0" y="635.0" />
+      <point x="584.5" y="635.0" />
+      <point x="145.0" y="167.0" />
+    </edge>
+    <edge source="com.example.thiago.alunomapa.DiciplinasActivity" target="com.example.thiago.alunomapa.Banco">
+      <point x="192.375" y="-153.0" />
+      <point x="448.875" y="635.0" />
+      <point x="439.5" y="635.0" />
+      <point x="0.0" y="167.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7157446808510638" x="607.0" y="577.5" />
+  <SelectedNodes>
+    <node>com.example.thiago.alunomapa.CadastroActivity</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

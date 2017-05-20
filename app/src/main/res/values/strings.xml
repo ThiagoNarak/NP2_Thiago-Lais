@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="action_today">Hoje</string>
+    <string name="action_day_view">Visao diaria</string>
+    <string name="action_three_day_view">Visao 3 dias</string>
+    <string name="action_week_view">Visao semanal</string>
+    <string name="title_activity_basic">Calendario</string>
+    <string name="title_activity_asynchronous">Asynchronous Events</string>
+    <string name="async_error">Could not download events from the internet</string>
+
+    <string-array name="cursos_array">
+        <item>Ciencia da computacao</item>
+        <item>Engenharia da computacao</item>
+        <item>Analise Desenvolvimento de sistemas</item>
+
+    </string-array>
+    <string-array name="semestreCC">
+        <item>Semestre 1</item>
+        <item>Semestre 2</item>
+
+
+    </string-array>
+
+    <string name="entrar">entrar</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

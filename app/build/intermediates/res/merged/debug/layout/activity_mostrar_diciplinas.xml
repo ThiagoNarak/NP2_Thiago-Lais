@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thiago.alunomapa.MostrarDiciplinasActivity">
+
+    <ListView
+        android:id="@+id/listCadeira"
+        android:layout_width="135dp"
+        android:layout_height="528dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/parent_linear_layout"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="42dp"
+        android:layout_marginTop="0dp" />
+
+    <ListView
+        android:id="@+id/listBloco"
+        android:layout_width="62dp"
+        android:layout_height="470dp"
+        android:scrollbars="none"
+        app:layout_constraintLeft_toRightOf="@+id/listCadeira"
+        app:layout_constraintTop_toBottomOf="@+id/parent_linear_layout" />
+
+    <ListView
+        android:id="@+id/listHorario"
+        android:layout_width="100dp"
+        android:layout_height="466dp"
+        android:scrollbars="none"
+        app:layout_constraintLeft_toRightOf="@+id/listSala"
+        app:layout_constraintTop_toTopOf="@+id/listBloco" />
+
+    <ListView
+        android:id="@+id/listSala"
+        android:layout_width="62dp"
+        android:layout_height="465dp"
+        android:scrollbars="none"
+        app:layout_constraintLeft_toRightOf="@+id/listBloco"
+        app:layout_constraintTop_toTopOf="@+id/listBloco" />
+
+    <LinearLayout
+        android:id="@+id/parent_linear_layout"
+        android:layout_width="355dp"
+        android:layout_height="47dp"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-2dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:text="      CADEIRA"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:text="bloco"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:text="sala"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="horario"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="544dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

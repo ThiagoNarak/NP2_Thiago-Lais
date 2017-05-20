@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thiago.alunomapa.CadastroActivity">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="533dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+
+            android:layout_alignLeft="@+id/editTextCurso"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/editTextCurso"
+            android:layout_weight="0.08"
+            android:text="Nome:"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNomeCadastro"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginLeft="46pt"
+            android:ems="10"
+            android:hint="Ex: Thiago"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextNome"
+            android:layout_alignStart="@+id/editTextNome"
+            android:layout_below="@+id/editTextNome"
+            android:layout_weight="0.13"
+            android:text="Curso:"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <Spinner
+
+            android:id="@+id/spinnerCursos"
+            android:layout_width="248dp"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextSenha"
+            android:layout_marginLeft="45pt" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextCurso"
+            android:layout_alignStart="@+id/editTextCurso"
+            android:layout_below="@+id/editTextCurso"
+            android:layout_weight="0.08"
+            android:text="Matricula:"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextMatriculaCadastro"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45pt"
+            android:ems="10"
+
+            android:hint="Ex: 1620680"
+            android:inputType="number"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTextSenha"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:text="Senha:"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextSenhaCadastro"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editTextMatricula"
+            android:layout_alignRight="@+id/editTextMatricula"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="45pt"
+            android:ems="10"
+            android:hint="*******"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/buttonCadastrar"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70pt"
+            android:text="Cadastrar" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

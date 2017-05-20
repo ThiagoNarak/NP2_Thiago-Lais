@@ -1,0 +1,195 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:2:1-66:12
+	package
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:3:5-43
+		INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml
+		INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml
+		INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml
+		INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.CLEAR_APP_CACHE
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:11:5-73
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:11:22-71
+application
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:13:5-64:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/toliveira/.android/build-cache/604feabfa57d9aba8f16161cd0f6a829c26531f9/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] /home/toliveira/.android/build-cache/0af7a2c2bc38ec1d4f83aa040da177d3777dba88/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/toliveira/.android/build-cache/f586e0f36787243d1c273cdfe2156565f458ce0d/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/toliveira/.android/build-cache/4f4e7062abc6217231e7b3150b26d7104ee93f1f/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /home/toliveira/.android/build-cache/391a6bc6ac793b0dc8d9eb24b7689f48d54c03e1/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:gridlayout-v7:25.3.1] /home/toliveira/.android/build-cache/dbfa5658b3c3e04e0601d6af81883f9e4a7149ad/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/toliveira/.android/build-cache/762736cc137142cb04e13899a65dc32082d4db41/output/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] /home/toliveira/.android/build-cache/0be9da57637195d85da9857895959d2fd5a83dc9/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /home/toliveira/.android/build-cache/077bb754827a5221d827a6d2137d5a5f26dfa7e5/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /home/toliveira/.android/build-cache/f23071eea5536fc27936c21a9b42930d7843c498/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] /home/toliveira/.android/build-cache/d1b84ee88780c2dda23cf650a2d0c1b985a3d0d6/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/toliveira/.android/build-cache/c3a3ee865c535fabf1c54eda951119d5a677d7d9/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/toliveira/.android/build-cache/0eaa98029845454cf507dde32801c6ad0c212bf1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/toliveira/.android/build-cache/a26508ad80ecfe0ae6b7c4bd9075f2baa2b517a3/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/toliveira/.android/build-cache/ea4f704d74f78c3de67e406295a8e298795ae5b6/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/toliveira/.android/build-cache/9b2c4ddf89bff305a216615720146dbc928baf61/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:16:9-41
+	android:supportsRtl
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:18:9-35
+	android:roundIcon
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:17:9-54
+	android:allowBackup
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:14:9-35
+	android:icon
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:15:9-43
+	android:theme
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:19:9-40
+activity#com.example.thiago.alunomapa.MainActivity
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:20:9-29:20
+	android:label
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:21:13-41
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:20:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:24:13-28:29
+action#android.intent.action.MAIN
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:27:27-74
+activity#com.example.thiago.alunomapa.BasicActivity
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:30:9-33:20
+	android:label
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:32:13-57
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:31:13-42
+activity#com.example.thiago.alunomapa.DiciplinasActivityDelete
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:35:9-37:15
+	android:label
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:36:13-47
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:35:19-59
+activity#com.example.thiago.alunomapa.CadastroActivity
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:38:9-40:15
+	android:label
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:39:13-46
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:38:19-51
+activity#com.example.thiago.alunomapa.DiciplinasActivity
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:41:9-43:15
+	android:label
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:42:13-49
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:41:19-53
+activity#com.example.thiago.alunomapa.MenuActivity
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:44:9-45:35
+	android:label
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:45:13-33
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:44:19-47
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:54:9-56:55
+	android:value
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:56:13-52
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:55:13-58
+activity#com.example.thiago.alunomapa.MapsActivity
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:58:9-60:59
+	android:label
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:60:13-56
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:59:13-41
+activity#com.example.thiago.alunomapa.MostrarDiciplinasActivity
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:61:9-63:25
+	android:label
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:62:13-57
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:61:19-60
+uses-sdk
+INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/toliveira/.android/build-cache/604feabfa57d9aba8f16161cd0f6a829c26531f9/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] /home/toliveira/.android/build-cache/0af7a2c2bc38ec1d4f83aa040da177d3777dba88/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/toliveira/.android/build-cache/f586e0f36787243d1c273cdfe2156565f458ce0d/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/toliveira/.android/build-cache/4f4e7062abc6217231e7b3150b26d7104ee93f1f/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/toliveira/.android/build-cache/c759fb414ad716379899416e319331484d0965df/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] /home/toliveira/.android/build-cache/391a6bc6ac793b0dc8d9eb24b7689f48d54c03e1/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:gridlayout-v7:25.3.1] /home/toliveira/.android/build-cache/dbfa5658b3c3e04e0601d6af81883f9e4a7149ad/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/toliveira/.android/build-cache/762736cc137142cb04e13899a65dc32082d4db41/output/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:10.2.1] /home/toliveira/.android/build-cache/0be9da57637195d85da9857895959d2fd5a83dc9/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /home/toliveira/.android/build-cache/077bb754827a5221d827a6d2137d5a5f26dfa7e5/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /home/toliveira/.android/build-cache/f23071eea5536fc27936c21a9b42930d7843c498/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] /home/toliveira/.android/build-cache/d1b84ee88780c2dda23cf650a2d0c1b985a3d0d6/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /home/toliveira/.android/build-cache/c3a3ee865c535fabf1c54eda951119d5a677d7d9/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/toliveira/.android/build-cache/0eaa98029845454cf507dde32801c6ad0c212bf1/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/toliveira/.android/build-cache/a26508ad80ecfe0ae6b7c4bd9075f2baa2b517a3/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/toliveira/.android/build-cache/ea4f704d74f78c3de67e406295a8e298795ae5b6/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] /home/toliveira/.android/build-cache/9b2c4ddf89bff305a216615720146dbc928baf61/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /home/toliveira/.android/build-cache/0af7a2c2bc38ec1d4f83aa040da177d3777dba88/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml
+		INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml
+		INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /home/toliveira/.android/build-cache/0af7a2c2bc38ec1d4f83aa040da177d3777dba88/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/toliveira/.android/build-cache/f586e0f36787243d1c273cdfe2156565f458ce0d/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/toliveira/.android/build-cache/4f4e7062abc6217231e7b3150b26d7104ee93f1f/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/toliveira/.android/build-cache/c759fb414ad716379899416e319331484d0965df/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /home/toliveira/.android/build-cache/391a6bc6ac793b0dc8d9eb24b7689f48d54c03e1/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:gridlayout-v7:25.3.1] /home/toliveira/.android/build-cache/dbfa5658b3c3e04e0601d6af81883f9e4a7149ad/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/toliveira/.android/build-cache/762736cc137142cb04e13899a65dc32082d4db41/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/toliveira/.android/build-cache/d1b84ee88780c2dda23cf650a2d0c1b985a3d0d6/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/toliveira/.android/build-cache/c3a3ee865c535fabf1c54eda951119d5a677d7d9/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/toliveira/.android/build-cache/0eaa98029845454cf507dde32801c6ad0c212bf1/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/toliveira/.android/build-cache/a26508ad80ecfe0ae6b7c4bd9075f2baa2b517a3/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/toliveira/.android/build-cache/ea4f704d74f78c3de67e406295a8e298795ae5b6/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/toliveira/.android/build-cache/9b2c4ddf89bff305a216615720146dbc928baf61/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /home/toliveira/.android/build-cache/0af7a2c2bc38ec1d4f83aa040da177d3777dba88/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /home/toliveira/.android/build-cache/0af7a2c2bc38ec1d4f83aa040da177d3777dba88/output/AndroidManifest.xml:26:9-47
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/toliveira/.android/build-cache/0be9da57637195d85da9857895959d2fd5a83dc9/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/toliveira/.android/build-cache/0be9da57637195d85da9857895959d2fd5a83dc9/output/AndroidManifest.xml:19:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/toliveira/.android/build-cache/0be9da57637195d85da9857895959d2fd5a83dc9/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/toliveira/.android/build-cache/0be9da57637195d85da9857895959d2fd5a83dc9/output/AndroidManifest.xml:20:22-64
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/toliveira/.android/build-cache/0be9da57637195d85da9857895959d2fd5a83dc9/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/toliveira/.android/build-cache/0be9da57637195d85da9857895959d2fd5a83dc9/output/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.2.1] /home/toliveira/.android/build-cache/0be9da57637195d85da9857895959d2fd5a83dc9/output/AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.1] /home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.1] /home/toliveira/.android/build-cache/f23071eea5536fc27936c21a9b42930d7843c498/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] /home/toliveira/.android/build-cache/f23071eea5536fc27936c21a9b42930d7843c498/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.1] /home/toliveira/.android/build-cache/f23071eea5536fc27936c21a9b42930d7843c498/output/AndroidManifest.xml:20:20-65

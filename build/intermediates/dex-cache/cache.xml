@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f19e7f4b7c18bc56207195a7c18562e1a252d315">
+        <dex dex="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_821752c839f2b132a0354aa1561072b9c5f476c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bb08e8a1d63eb1083dc133ff2971117a4baf21a4/classes.dex" />
+    </item>
+
+</items>
