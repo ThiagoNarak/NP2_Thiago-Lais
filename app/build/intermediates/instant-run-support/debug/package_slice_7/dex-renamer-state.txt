@@ -1,4 +1,4 @@
-#Sat May 20 11:33:11 BRT 2017
+#Sat May 20 18:12:40 BRT 2017
 base.0=/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7
 renamed.0=classes.dex
 file.0=/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex

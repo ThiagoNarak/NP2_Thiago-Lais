@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 /**
@@ -51,6 +52,13 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
         // Set up a date time interpreter to interpret how the date and time will be formatted in
         // the week view. This is optional.
         setupDateTimeInterpreter(false);
+
+        //inicio da week view em 6 horas da manha do dia atual.
+        mWeekView.goToHour(6);
+
+
+
+
     }
 
 
@@ -64,9 +72,11 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         setupDateTimeInterpreter(id == R.id.action_week_view);
+
         switch (id){
             case R.id.action_today:
                 mWeekView.goToToday();
+
                 return true;
             case R.id.action_day_view:
                 if (mWeekViewType != TYPE_DAY_VIEW) {
@@ -132,7 +142,8 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
 
             @Override
             public String interpretTime(int hour) {
-                return hour > 11 ? (hour - 12) + " PM" : (hour == 0 ? "12 AM" : hour + " AM");
+
+                return hour+":00";// > 11 ? (hour - 12) + " PM" : (hour == 0 ? "12 AM" : hour + " AM");
             }
         });
     }
@@ -145,11 +156,11 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
 
     @Override
     public void onEventClick(WeekViewEvent event, RectF eventRect) {
+        //logica matriz semanal para mapa
 
         Toast.makeText(this, "Clicked " + event.getName(), Toast.LENGTH_SHORT).show();
             event.setBloco(event.getName().substring(event.getName().length()-8));
         Toast.makeText(this, "Clicked " + event.getBloco(), Toast.LENGTH_SHORT).show();
-        //TODO: IMPLEMENTAR LOGICA PARA IR AO BLOCO
 
 
             Intent intent = new Intent(BaseActivity.this,MapsActivity.class);

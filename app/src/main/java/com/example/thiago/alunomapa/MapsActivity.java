@@ -97,12 +97,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }else{
             bloco="lais";
         }
-
-            LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        double longitude=0;
+        double latitude=0;
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-        double longitude = location.getLongitude();
-            double latitude = location.getLatitude();
+
+
+
+             longitude = location.getLongitude();
+            latitude = location.getLatitude();
+
+
 
 
 //        Location myLocation = (Location) mMap.getMyLocation();
@@ -334,8 +340,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             }
             // Add a marker in Sydney and move the camera
-            LatLng unifor = new LatLng(location.getLatitude(),location.getLongitude());
-            LatLng blocoD = new LatLng(-3.770544, -38.480403);
+            LatLng unifor = new LatLng(-3.770544,-38.480403);
 
             //  mMap.addMarker(new MarkerOptions().position(blocoD).title("Bloco D "));
             mMap.setMapType(googleMap.MAP_TYPE_SATELLITE);

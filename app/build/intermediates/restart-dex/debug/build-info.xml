@@ -6,22 +6,22 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1495292375935"
+    timestamp="1495315016419"
     token="-5631196911609453893"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="421" />
+        duration="601" />
     <task
         name="instant-run-dex"
-        duration="150" />
+        duration="387" />
     <task
         name="instant-run-transform"
-        duration="71" />
+        duration="115" />
     <task
         name="verifier"
-        duration="3" />
+        duration="11" />
 
     <artifact
         location="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/reload-dex/debug/classes.dex"
@@ -29,8 +29,11 @@
 
     <build
         build-mode="FULL"
-        timestamp="1495292268293"
+        timestamp="1495312839147"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
         <artifact
             location="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
@@ -56,9 +59,6 @@
             location="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
@@ -69,8 +69,24 @@
             type="SPLIT_MAIN" />
     </build>
     <build
+        build-mode="COLD"
+        timestamp="1495314759163"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+    </build>
+    <build
         build-mode="HOT_WARM"
-        timestamp="1495292375935"
+        timestamp="1495314897233"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/builds/debug/1495314897233/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1495315016419"
         verifier="COMPATIBLE" >
         <artifact
             location="/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/reload-dex/debug/classes.dex"
