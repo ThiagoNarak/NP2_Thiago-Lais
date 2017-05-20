@@ -1,8 +1,10 @@
 package com.example.thiago.alunomapa;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,10 +55,29 @@ public class DiciplinasActivityDelete extends AppCompatActivity {
              final int finalI = i;
              deletar.setOnClickListener(new View.OnClickListener() {
              @Override
-             public void onClick(View v) {
+             public void onClick(final View v) {
 
-                 banco.deleteDiciplina(cadeirastring[finalI]);
-                 parentLinearLayout.removeView((View) v.getParent());
+                 DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                     @Override
+                     public void onClick(DialogInterface dialog, int which) {
+                         switch (which) {
+                             case DialogInterface.BUTTON_POSITIVE:
+                                 banco.deleteDiciplina(cadeirastring[finalI]);
+                                 parentLinearLayout.removeView((View) v.getParent());
+
+                                 break;
+
+                             case DialogInterface.BUTTON_NEGATIVE:
+
+
+                                 break;
+                         }
+                     }
+                 };
+
+                 AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
+                 builder.setMessage("Voce deseja realmente esta diciplina?").setPositiveButton("Sim", dialogClickListener)
+                         .setNegativeButton("Nao", dialogClickListener).show();
 
              }
          });
