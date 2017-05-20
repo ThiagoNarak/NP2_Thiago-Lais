@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             Banco banco = new Banco(this);
             matriculaBanco = banco.retornarMatriculaBanco();
         }catch (Exception e){
-
+            deleteCache(this);
 
         }
         //atribuicao a botoes
