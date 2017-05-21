@@ -73,6 +73,12 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
                 }
             }
         }
+        //TODO: GERAR METODO PARA INICIALIZAR NA SEGUNDA
+        //ISSUE: ESTE METODO AQUI EM BAIXO E TEMPORARIO
+        Calendar c=Calendar.getInstance();
+        c.set(2017,05,12);
+
+        mWeekView.goToDate(c);
 
 
 
