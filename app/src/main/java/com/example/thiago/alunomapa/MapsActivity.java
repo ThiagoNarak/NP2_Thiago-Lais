@@ -49,7 +49,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public boolean onOptionsItemSelected(MenuItem item){
         System.out.println(item.getItemId());
         switch(item.getItemId()) {
-            case 16908332:
+            case android.R.id.home:
                 Intent intent = new Intent(this, MenuActivity.class);
                 this.startActivity(intent);
                 break;

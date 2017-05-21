@@ -134,7 +134,7 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
                     mWeekView.setEventTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 10, getResources().getDisplayMetrics()));
                 }
                 return true;
-            case 16908332:
+            case android.R.id.home:
                 Intent intent = new Intent(this, MenuActivity.class);
                 this.startActivity(intent);
                 break;

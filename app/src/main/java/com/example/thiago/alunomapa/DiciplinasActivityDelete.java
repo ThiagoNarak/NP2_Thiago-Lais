@@ -35,8 +35,8 @@ public class DiciplinasActivityDelete extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         System.out.println(item.getItemId());
         switch(item.getItemId()) {
-            case 16908332:
-                Intent intent = new Intent(this, MenuActivity.class);
+            case android.R.id.home:
+                Intent intent = new Intent(this, MostrarDiciplinasActivity.class);
                 this.startActivity(intent);
                 break;
 

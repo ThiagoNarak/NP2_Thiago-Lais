@@ -32,15 +32,21 @@ public class MostrarDiciplinasActivity extends AppCompatActivity {
     private ArrayList<String> blocoString=new ArrayList<String>();
     private ArrayList<String> salaString=new ArrayList<String>();
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+    @Override
     public boolean onOptionsItemSelected(MenuItem item){
-
+        System.out.println(item.getItemId());
 
         switch(item.getItemId()) {
-            case 16908332:
+
+            case android.R.id.home:
                 Intent intent = new Intent(this, MenuActivity.class);
                 this.startActivity(intent);
                 break;
-            case 1:
+            case R.id.editarDiciplinas:
                  intent = new Intent(this, DiciplinasActivityDelete.class);
                 this.startActivity(intent);
                 break;
