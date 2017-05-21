@@ -91,6 +91,7 @@ public final class R {
         public static final int terrain = 0x7f0e0049;
         public static final int text = 0x7f0e00e2;
         public static final int text2 = 0x7f0e00e0;
+        public static final int toolbar = 0x7f0e00eb;
         public static final int wide = 0x7f0e0051;
         public static final int wrap_content = 0x7f0e002c;
     }

@@ -17,7 +17,9 @@ import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -39,20 +41,37 @@ import static android.R.attr.delay;
 import static android.R.attr.startDelay;
 import static com.google.android.gms.maps.CameraUpdateFactory.newLatLng;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback{
 
 
     private GoogleMap mMap;
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        System.out.println(item.getItemId());
+        switch(item.getItemId()) {
+            case 16908332:
+                Intent intent = new Intent(this, MenuActivity.class);
+                this.startActivity(intent);
+                break;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
 

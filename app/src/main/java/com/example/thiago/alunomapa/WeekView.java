@@ -1922,7 +1922,28 @@ public class WeekView extends View {
      * Show a specific day on the week view.
      * @param date The date to show.
      */
+    public void goToDateWeek(Calendar date) {
+        mScroller.forceFinished(true);
+        mCurrentScrollDirection = mCurrentFlingDirection = Direction.NONE;
 
+        date.set(Calendar.HOUR_OF_DAY, 6);
+        date.set(Calendar.MINUTE, 0);
+        date.set(Calendar.SECOND, 0);
+        date.set(Calendar.MILLISECOND, 0);
+
+
+        mScrollToDay = date;
+
+        mRefreshEvents = true;
+
+
+        long day = 1000L * 60L * 60L * 24L;
+        long dateInMillis = date.getTimeInMillis() + date.getTimeZone().getOffset(date.getTimeInMillis());
+        long todayInMillis = date.getTimeInMillis() + date.getTimeZone().getOffset(date.getTimeInMillis());
+        long dateDifference = (dateInMillis/day) - (todayInMillis/day);
+        mCurrentOrigin.x = - dateDifference * (mWidthPerDay + mColumnGap);
+        invalidate();
+    }
     public void goToDate(Calendar date) {
         mScroller.forceFinished(true);
         mCurrentScrollDirection = mCurrentFlingDirection = Direction.NONE;

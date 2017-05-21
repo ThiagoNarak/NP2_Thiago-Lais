@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,12 +29,29 @@ public class DiciplinasActivity extends AppCompatActivity {
     private Button adicionar;
     Banco banco = new Banco(this);
     @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        System.out.println(item.getItemId());
+        switch(item.getItemId()) {
+            case 16908332:
+                Intent intent = new Intent(this, MenuActivity.class);
+                this.startActivity(intent);
+                break;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+
+        return true;
+    }
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diciplinas);
         parentLinearLayout = (LinearLayout) findViewById(R.id.parent_linear_layout);
         finalizarDiciplinas= (Button)findViewById(R.id.buttonFinalizarDiciplinas);
          adicionar= (Button)findViewById(R.id.add_field_button);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         adicionar.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -4100,6 +4100,7 @@ containing a value of this type.
         public static final int editTextSenhaCadastro=0x7f0e009c;
         public static final int editTextSenhaLogin=0x7f0e00a7;
         public static final int edit_query=0x7f0e0084;
+        public static final int editarDiciplinas=0x7f0e00ea;
         public static final int end=0x7f0e0032;
         public static final int end_padder=0x7f0e00e3;
         public static final int enterAlways=0x7f0e0021;
@@ -4236,6 +4237,7 @@ containing a value of this type.
         public static final int titleDividerNoCustom=0x7f0e0077;
         public static final int title_template=0x7f0e0075;
         public static final int toggleButtonSalvarCancelar=0x7f0e00c8;
+        public static final int toolbar=0x7f0e00eb;
         public static final int top=0x7f0e0037;
         public static final int topPanel=0x7f0e0074;
         public static final int touch_outside=0x7f0e00bb;
@@ -4340,6 +4342,8 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int main=0x7f0f0000;
+        public static final int menu=0x7f0f0001;
+        public static final int toolbar=0x7f0f0002;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

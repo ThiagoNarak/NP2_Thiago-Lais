@@ -1,12 +1,16 @@
 package com.example.thiago.alunomapa;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -25,16 +29,36 @@ public class DiciplinasActivityDelete extends AppCompatActivity {
     private TextView bloco;
     private TextView horario;
     private ImageView deletar;
+    private Toolbar voltar;
     Banco banco = new Banco(this);
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        System.out.println(item.getItemId());
+        switch(item.getItemId()) {
+            case 16908332:
+                Intent intent = new Intent(this, MenuActivity.class);
+                this.startActivity(intent);
+                break;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+
+        return true;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         setContentView(R.layout.activity_diciplinasdeletar);
+
         parentLinearLayout = (LinearLayout) findViewById(R.id.parent_linear_layout);
         finalizarDiciplinas = (Button) findViewById(R.id.buttonFinalizarDiciplinas);
         diciplinasArrayList = banco.consultaDiciplinas();
-
-
 
 
          for (int i=0;i<diciplinasArrayList.size();i++) {
@@ -53,6 +77,7 @@ public class DiciplinasActivityDelete extends AppCompatActivity {
             horario.setText(diciplinasArrayList.get(i).getHorario());
             bloco.setText(diciplinasArrayList.get(i).getBloco());
              final int finalI = i;
+
              deletar.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(final View v) {
@@ -76,7 +101,7 @@ public class DiciplinasActivityDelete extends AppCompatActivity {
                  };
 
                  AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-                 builder.setMessage("Voce deseja realmente esta diciplina?").setPositiveButton("Sim", dialogClickListener)
+                 builder.setMessage("Voce deseja realmente DELETAR esta diciplina?").setPositiveButton("Sim", dialogClickListener)
                          .setNegativeButton("Nao", dialogClickListener).show();
 
              }
@@ -95,5 +120,8 @@ public class DiciplinasActivityDelete extends AppCompatActivity {
         });
 
     }
+
+
+
 
 }

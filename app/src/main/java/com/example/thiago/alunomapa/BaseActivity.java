@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -28,10 +29,12 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
     private WeekView mWeekView;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Get a reference for the week view in the layout.
         mWeekView = (WeekView) findViewById(R.id.weekView);
@@ -53,8 +56,24 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
         // the week view. This is optional.
         setupDateTimeInterpreter(false);
 
-        //inicio da week view em 6 horas da manha do dia atual.
-        mWeekView.goToHour(6);
+        //inicio do horario de visao a dependendo do horario que cadastrou as diciplinas
+        Banco banco = new Banco(this);
+        ArrayList<Diciplinas> diciplinasArrayList=banco.consultaDiciplinas();
+        for (Diciplinas e:diciplinasArrayList) {
+            if(e.getHorario().contains("M")){
+                mWeekView.goToHour(7);
+                break;
+            }else{
+                if(e.getHorario().contains("T")){
+                    mWeekView.goToHour(13);
+                    break;
+                }else{
+                    mWeekView.goToHour(19);
+
+                }
+            }
+        }
+
 
 
 
@@ -75,6 +94,7 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
 
         switch (id){
             case R.id.action_today:
+
                 mWeekView.goToToday();
 
                 return true;
@@ -114,6 +134,10 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
                     mWeekView.setEventTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 10, getResources().getDisplayMetrics()));
                 }
                 return true;
+            case 16908332:
+                Intent intent = new Intent(this, MenuActivity.class);
+                this.startActivity(intent);
+                break;
         }
 
         return super.onOptionsItemSelected(item);
@@ -130,7 +154,7 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
             public String interpretDate(Calendar date) {
                 SimpleDateFormat weekdayNameFormat = new SimpleDateFormat("EEE", Locale.getDefault());
                 String weekday = weekdayNameFormat.format(date.getTime());
-                SimpleDateFormat format = new SimpleDateFormat(" M/d", Locale.getDefault());
+                SimpleDateFormat format = new SimpleDateFormat(" d/M", Locale.getDefault());
 
                 // All android api level do not have a standard way of getting the first letter of
                 // the week day name. Hence we get the first char programmatically.

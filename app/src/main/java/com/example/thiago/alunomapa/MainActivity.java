@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); //ACOPLA ESTA CLASSE A INTERFACE ACTIVITY
+
         try {
             Banco banco = new Banco(this);
             matriculaBanco = banco.retornarMatriculaBanco();

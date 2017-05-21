@@ -3,6 +3,7 @@ package com.example.thiago.alunomapa;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -21,6 +22,22 @@ public class CadastroActivity extends AppCompatActivity {
     private EditText senhaCadastro;
     private String curso;
     Banco banco = new Banco(this);
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        System.out.println(item.getItemId());
+        switch(item.getItemId()) {
+            case 16908332:
+                Intent intent = new Intent(this, MenuActivity.class);
+                this.startActivity(intent);
+                break;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +51,7 @@ public class CadastroActivity extends AppCompatActivity {
         senhaCadastro = (EditText)findViewById(R.id.editTextSenhaCadastro);
         //metodo LINK INTENT CADASTRAR
         button.setOnClickListener(cadastrarDiciplinas);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //SPINNER CRIACAO DO VETOR
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.cursos_array, android.R.layout.simple_spinner_item);

@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name"></string>
     <string name="action_today">Hoje</string>
-    <string name="action_day_view">Visao diaria</string>
-    <string name="action_three_day_view">Visao 3 dias</string>
-    <string name="action_week_view">Visao semanal</string>
+    <string name="action_day_view">Diaria</string>
+    <string name="action_three_day_view">3 dias</string>
+    <string name="action_week_view">Semanal</string>
     <string name="title_activity_basic">Calendario</string>
     <string name="title_activity_asynchronous">Asynchronous Events</string>
     <string name="async_error">Could not download events from the internet</string>
@@ -22,5 +22,5 @@
     </string-array>
 
     <string name="entrar">entrar</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps">Mapa Campus</string>
 </resources>
