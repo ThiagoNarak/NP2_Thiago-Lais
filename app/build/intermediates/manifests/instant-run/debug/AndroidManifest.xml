@@ -44,8 +44,7 @@
         </activity>
         <activity
             android:name="com.example.thiago.alunomapa.BasicActivity"
-            android:label="@string/title_activity_basic" >
-        </activity>
+            android:label="@string/title_activity_basic" />
         <activity
             android:name="com.example.thiago.alunomapa.DiciplinasActivityDelete"
             android:label="Deletar Diciplinas" />
@@ -76,6 +75,11 @@
         <activity
             android:name="com.example.thiago.alunomapa.MostrarDiciplinasActivity"
             android:label="Lista Diciplinas Cadastradas" />
+        <activity
+            android:name="com.example.thiago.alunomapa.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.thiago.alunomapa.vazia" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

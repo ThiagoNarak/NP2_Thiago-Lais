@@ -8,7 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
 
     <application
         android:allowBackup="true"
@@ -17,10 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:label="Tela Inicial"
-
-            >
+        <activity
+            android:name=".MainActivity"
+            android:label="Tela Inicial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,20 +28,19 @@
         </activity>
         <activity
             android:name=".BasicActivity"
-            android:label="@string/title_activity_basic" >
-        </activity>
-
-        <activity android:name=".DiciplinasActivityDelete"
-            android:label="Deletar Diciplinas"
-            />
-        <activity android:name=".CadastroActivity"
-            android:label="Cadastrar Usuario"
-            />
-        <activity android:name=".DiciplinasActivity"
-            android:label="CADASTRAR DICIPLINAS"
-            />
-        <activity android:name=".MenuActivity"
-            android:label="Menu"/>
+            android:label="@string/title_activity_basic" />
+        <activity
+            android:name=".DiciplinasActivityDelete"
+            android:label="Deletar Diciplinas" />
+        <activity
+            android:name=".CadastroActivity"
+            android:label="Cadastrar Usuario" />
+        <activity
+            android:name=".DiciplinasActivity"
+            android:label="CADASTRAR DICIPLINAS" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="Menu" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -52,18 +50,20 @@
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
         <meta-data
-
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".MostrarDiciplinasActivity"
-
-            android:label="Lista Diciplinas Cadastradas"
-
-            ></activity>
+        <activity
+            android:name=".MostrarDiciplinasActivity"
+            android:label="Lista Diciplinas Cadastradas" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".vazia"></activity>
     </application>
 
 </manifest>

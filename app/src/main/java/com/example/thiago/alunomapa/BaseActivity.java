@@ -28,7 +28,7 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
     private int mWeekViewType = TYPE_THREE_DAY_VIEW;
     private WeekView mWeekView;
 
-
+    //PROFESSORRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,30 +57,21 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
         setupDateTimeInterpreter(false);
 
         //inicio do horario de visao a dependendo do horario que cadastrou as diciplinas
-        Banco banco = new Banco(this);
-        ArrayList<Diciplinas> diciplinasArrayList=banco.consultaDiciplinas();
-        for (Diciplinas e:diciplinasArrayList) {
-            if(e.getHorario().contains("M")){
-                mWeekView.goToHour(7);
-                break;
-            }else{
-                if(e.getHorario().contains("T")){
-                    mWeekView.goToHour(13);
-                    break;
-                }else{
-                    mWeekView.goToHour(19);
 
-                }
-            }
-        }
+        mWeekView.setFirstDayOfWeek(Calendar.MONDAY);
         //TODO: GERAR METODO PARA INICIALIZAR NA SEGUNDA
         //ISSUE: ESTE METODO AQUI EM BAIXO E TEMPORARIO
         Calendar c=Calendar.getInstance();
-        c.set(2017,05,12);
 
-        mWeekView.goToDate(c);
+        Date d = c.getTime();
+        d.getDate();
+        System.out.println(c.getTime().toString());
+//        System.out.println(c.getWeeksInWeekYear());
+//        c.set(2017,05,12);
+//
+//        mWeekView.goToDate(c);
 
-
+        getHoraInicial();
 
 
 
@@ -214,4 +205,25 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
     public WeekView getWeekView() {
         return mWeekView;
     }
+public void getHoraInicial(){
+    Banco banco = new Banco(this);
+    ArrayList<Diciplinas> diciplinasArrayList=banco.consultaDiciplinas();
+    for (Diciplinas e:diciplinasArrayList) {
+        if(e.getHorario().contains("M")){
+            mWeekView.goToHour(7);
+            break;
+        }else{
+            if(e.getHorario().contains("T")){
+                mWeekView.goToHour(13);
+                break;
+            }else{
+                mWeekView.goToHour(19);
+
+
+
+            }
+        }
+
+    }
+}
 }

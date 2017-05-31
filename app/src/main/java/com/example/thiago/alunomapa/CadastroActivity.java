@@ -27,7 +27,7 @@ public class CadastroActivity extends AppCompatActivity {
         System.out.println(item.getItemId());
         switch(item.getItemId()) {
             case android.R.id.home:
-                Intent intent = new Intent(this, MenuActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 this.startActivity(intent);
                 break;
 

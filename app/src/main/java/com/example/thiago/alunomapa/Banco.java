@@ -28,7 +28,7 @@ public  class Banco extends SQLiteOpenHelper {
     public Banco(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
-
+    //PROFESSORRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String sql_questao = "CREATE TABLE " + TABLE_DICIPLINAS
@@ -113,7 +113,8 @@ public  class Banco extends SQLiteOpenHelper {
 
         ArrayList<Matricula>listaTemp=consultaMatricula();
 
-        Matricula matricula= new Matricula();
+        Matricula matricula = new Matricula();
+
         if(listaTemp.size()!=0) {
             matricula.setMatricula(listaTemp.get(0).getMatricula());
             matricula.setSenha(listaTemp.get(0).getSenha());

@@ -4,12 +4,12 @@
         "source": "/home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
-        "source": "/home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/res/drawable/common_google_signin_btn_text_light_focused.xml"
-    },
-    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/res/drawable/common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
@@ -58,6 +58,10 @@
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/side_nav_bar.xml",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/side_nav_bar.xml"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",

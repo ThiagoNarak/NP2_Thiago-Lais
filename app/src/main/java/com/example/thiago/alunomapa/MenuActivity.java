@@ -14,6 +14,7 @@ public class MenuActivity extends AppCompatActivity {
     private Button lista;
     private Button deleteDatabase;
     private Button cadastrarDiciplinas;
+    private Button buttonDrawview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class MenuActivity extends AppCompatActivity {
         lista = (Button) findViewById(R.id.buttonMostrarDiciplinas);
         deleteDatabase = (Button) findViewById(R.id.buttonDeletDataBase);
         cadastrarDiciplinas = (Button)findViewById(R.id.buttonCadastrarDiciplinas);
-
+        buttonDrawview = (Button)findViewById(R.id.mainexperimental);
 
 
         deleteDatabase.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +56,14 @@ public class MenuActivity extends AppCompatActivity {
                 builder.setMessage("Voce deseja realmente apagar todos os dados?").setPositiveButton("Sim", dialogClickListener)
                         .setNegativeButton("Nao", dialogClickListener).show();
 
+            }
+        });
+
+        buttonDrawview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(MenuActivity.this,Main2Activity.class);
+                startActivity(intent);
             }
         });
         cadastrarDiciplinas.setOnClickListener(new View.OnClickListener() {

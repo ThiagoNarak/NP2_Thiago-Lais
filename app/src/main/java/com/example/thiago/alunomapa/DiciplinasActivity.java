@@ -27,12 +27,13 @@ public class DiciplinasActivity extends AppCompatActivity {
     private EditText horario;
     private ToggleButton salvar;
     private Button adicionar;
+    private boolean isNotSaved=false;
     Banco banco = new Banco(this);
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         System.out.println(item.getItemId());
         switch(item.getItemId()) {
-            case 16908332:
+            case android.R.id.home:
                 Intent intent = new Intent(this, MenuActivity.class);
                 this.startActivity(intent);
                 break;
@@ -56,8 +57,13 @@ public class DiciplinasActivity extends AppCompatActivity {
         adicionar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //checar se foi adicionado a cadeira
+                 if(isNotSaved==false) {
+                     onAddField(v);
+                 }else{
+                     Toast.makeText(getBaseContext(),"Click em salvar para adicionar mais.",Toast.LENGTH_LONG).show();
 
-                onAddField(v);
+                 }
 
             }
         });
@@ -71,25 +77,18 @@ public class DiciplinasActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
 
+
             }
         });
 
 
 
     }
-    public void reloadactivity(){
-        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        final View rowView = inflater.inflate(R.layout.field, null);
-        // Add the new row before the add field button.
-        parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
-        cadeira=(EditText) rowView.findViewById(R.id.editTextCadeira);
-        bloco=(EditText) rowView.findViewById(R.id.editTextBloco);
-        horario=(EditText)rowView.findViewById(R.id.editTextHorario);
-
-    }
 
     public void onAddField(View v) {
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        isNotSaved=true;
+
         final View rowView = inflater.inflate(R.layout.field, null);
         // Add the new row before the add field button.
         parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
@@ -133,6 +132,8 @@ public class DiciplinasActivity extends AppCompatActivity {
                                     salvar.setChecked(false);
 
                                 }else{
+
+
                                     String aux;
                                     int auxInt;
                                     aux=bloco.getText().toString();
@@ -158,6 +159,8 @@ public class DiciplinasActivity extends AppCompatActivity {
 
                                     banco.addCadeiras(d);
                                     diciplinasArrayList.add(d);
+                                    isNotSaved=false;
+
                                 }
                             }else{
                                 horario.setError("Digite o horario Ex: M35AB");

@@ -28,6 +28,10 @@
         "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/layout/activity_main.xml"
     },
     {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/activity_main2.xml",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/layout/activity_main2.xml"
+    },
+    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/layout/abc_screen_simple.xml"
     },
@@ -104,6 +108,10 @@
         "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/layout/activity_menu.xml"
     },
     {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/nav_header_main2.xml",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/layout/nav_header_main2.xml"
+    },
+    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/layout/notification_template_icon_group.xml"
     },
@@ -118,6 +126,10 @@
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/app_bar_main2.xml",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/layout/app_bar_main2.xml"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/activity_base.xml",
@@ -146,6 +158,10 @@
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/content_main2.xml",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/layout/content_main2.xml"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
@@ -194,6 +210,10 @@
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/activity_vazia.xml",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/layout/activity_vazia.xml"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",

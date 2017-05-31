@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="370dp"
         android:layout_height="450dp"
-        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteX="6dp"
         tools:layout_editor_absoluteY="2dp">
 
         <Button
@@ -22,7 +22,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="76dp"
-            android:text="- Exibir Disciplinas" />
+            android:text="Minhas diciplinas" />
 
         <Button
             android:id="@+id/buttonMapaSemanal"
@@ -34,7 +34,7 @@
             android:layout_alignStart="@+id/buttonMostrarDiciplinas"
             android:layout_below="@+id/buttonMostrarDiciplinas"
             android:layout_marginTop="71dp"
-            android:text="- Exibir Matriz Semanal" />
+            android:text="Diciplinas semanais" />
 
         <Button
             android:id="@+id/buttonMapaUnifor"
@@ -46,7 +46,7 @@
             android:layout_alignStart="@+id/buttonMapaSemanal"
             android:layout_below="@+id/buttonMapaSemanal"
             android:layout_marginTop="74dp"
-            android:text="- Exibir Mapa Unifor" />
+            android:text="Mapa Unifor" />
 
         <Button
             android:id="@+id/buttonDeletDataBase"
@@ -69,5 +69,18 @@
             android:layout_toStartOf="@+id/textView7"
             android:text="Cadastrar Disciplinas"
             android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/mainexperimental"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="17dp"
+            android:text="Drawview experimental"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/buttonMostrarDiciplinas"
+            android:layout_alignStart="@+id/buttonMostrarDiciplinas" />
+
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

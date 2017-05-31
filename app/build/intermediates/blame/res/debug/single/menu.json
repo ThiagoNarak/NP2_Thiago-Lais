@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/menu/main2.xml",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/menu/main2.xml"
+    },
+    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/menu/main.xml",
         "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/menu/main.xml"
     },
@@ -10,5 +14,9 @@
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/menu/menu.xml",
         "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/menu/menu.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/menu/activity_main2_drawer.xml",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/menu/activity_main2_drawer.xml"
     }
 ]
