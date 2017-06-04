@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thiago.alunomapa.SobreActivity">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="341dp"
+        android:layout_height="273dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:text="Este aplicativo foi desenvolvido com o intuito de ajudar os alunos de calouros da unifor,     como nos tambem  ja fomos calouros tambem passamos pelas mesmas dificuldades e vemos a mesma dificuldade todos os anos devido a extensao enorme     do nosso campus UNIFOR, pensando nisso desenvolvemos uma solucao para auxiliar os novatos a irem  para as salas e organizarem seus horarios."
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOBRE O APLICATIVO"
+        android:textSize="36sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alunos:"
+        android:layout_marginTop="53dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLais"
+        android:layout_width="147dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="11dp"
+        android:text="Lais Amorim Menezes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/TextViewThiago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:text="Thiago Rodrigo Carvalho de Oliveira"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLais" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orientador"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:layout_marginRight="32dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPROF"
+        android:layout_width="87dp"
+        android:layout_height="81dp"
+        android:layout_marginRight="11dp"
+        android:text="Prof. Everton Guimares"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <ImageView
+        android:id="@+id/imageViewCoracao1"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLais"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel2" />
+
+    <ImageView
+        android:id="@+id/imageViewCoracao10"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLais"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel11" />
+
+    <ImageView
+        android:id="@+id/imageViewcoracaofinal"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel11"
+        app:layout_constraintLeft_toRightOf="@+id/textViewThiagoAparecer"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:id="@+id/imageViewCoracao9"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLais"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel10" />
+
+    <ImageView
+        android:id="@+id/imageViewCoracao8"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLais"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel9" />
+
+    <ImageView
+        android:id="@+id/imageViewCoracao7"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLais"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel8" />
+
+    <ImageView
+        android:id="@+id/imageViewCoracao6"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLais"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel7" />
+
+    <ImageView
+        android:id="@+id/imageViewCoracao1"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLais"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel1" />
+
+    <ImageView
+        android:id="@+id/imageViewCoracao5"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLais"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel6" />
+
+    <ImageView
+        android:id="@+id/imageViewCoracao4"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLais"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel5" />
+
+    <ImageView
+        android:id="@+id/imageViewCoracao3"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLais"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel4" />
+
+    <ImageView
+        android:id="@+id/imageViewCoracao2"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="87dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/textViewLais"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/pixel3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewCoracao3"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewThiagoAparecer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="80dp"
+        android:text="Thiago"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textViewLaisAparecer"
+        android:layout_width="28dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="80dp"
+        android:text="Lais"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewcoracaofinal"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageViewvader1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/pixel1vader" />
+
+    <ImageView
+        android:id="@+id/imageViewvader11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/pixel11vader" />
+
+    <ImageView
+        android:id="@+id/imageViewvader10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/pixel10vader" />
+
+    <ImageView
+        android:id="@+id/imageViewvader9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/pixel9vader" />
+
+    <ImageView
+        android:id="@+id/imageViewvader8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/pixel8vader" />
+
+    <ImageView
+        android:id="@+id/imageViewvader7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/pixel7vader" />
+
+    <ImageView
+        android:id="@+id/imageViewvader6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/pixel6vader" />
+
+    <ImageView
+        android:id="@+id/imageViewvader5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/pixel5vader" />
+
+    <ImageView
+        android:id="@+id/imageViewvader4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/pixel4vader" />
+
+    <ImageView
+        android:id="@+id/imageViewvader3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/pixel3vader" />
+
+    <ImageView
+        android:id="@+id/imageViewvader2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/pixel2vader" />
+
+</android.support.constraint.ConstraintLayout>

@@ -133,7 +133,9 @@ public class DiciplinasActivity extends AppCompatActivity {
 
                                 }else{
 
-
+//                                    if(bloco.getText().toString().matches(".*[^a-z].*")||(bloco.getText().toString().matches(".*[^A-Z].*")){
+//
+//                                    }
                                     String aux;
                                     int auxInt;
                                     aux=bloco.getText().toString();

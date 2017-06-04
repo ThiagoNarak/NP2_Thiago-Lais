@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/fotouniforentrada"
+
+
     tools:context="com.example.thiago.alunomapa.MainActivity"
     tools:layout_editor_absoluteY="81dp"
 
@@ -27,13 +30,15 @@
             android:layout_weight="0.03"
             android:text="MATRICULA"
             android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextMatriculaLogin"
             android:layout_width="184dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="46pt"
+            android:layout_marginLeft="40pt"
             android:ems="10"
             android:hint="Ex: 1620680"
             android:inputType="number"
@@ -46,13 +51,15 @@
             android:layout_marginTop="40px"
             android:text="SENHA"
             android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextSenhaLogin"
             android:layout_width="186dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="46pt"
+            android:layout_marginLeft="40pt"
             android:ems="10"
 
             android:hint="**********"
@@ -61,21 +68,30 @@
 
         <Button
             android:id="@+id/buttonLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="197dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="38pt"
             android:layout_marginTop="40pt"
-            android:layout_weight="0.03"
-            android:text="Entrar" />
+            android:background="@drawable/buttonshape"
+            android:backgroundTint="@color/accent"
+
+            android:elevation="0dp"
+            android:text="Entrar"
+            android:textAlignment="center"
+            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/textViewCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40pt"
+            android:layout_marginTop="30pt"
 
+
+            android:layout_weight="0.24"
             android:text="!!!!!!!!"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
 
     </LinearLayout>
 </android.widget.RelativeLayout>

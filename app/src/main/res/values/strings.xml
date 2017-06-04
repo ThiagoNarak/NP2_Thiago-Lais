@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"></string>
+    <string name="app_name">ADonde Unifor</string>
     <string name="action_today">Hoje</string>
     <string name="action_day_view">Diaria</string>
     <string name="action_three_day_view">3 dias</string>
@@ -7,6 +7,9 @@
     <string name="title_activity_basic">Calendario</string>
     <string name="title_activity_asynchronous">Asynchronous Events</string>
     <string name="async_error">Could not download events from the internet</string>
+    <string name="sobre">Este aplicativo foi desenvolvido com o intuito de ajudar os alunos de calouros da unifor,
+    como nos tambem  ja fomos calouros tambem passamos pelas mesmas dificuldades e vemos a mesma dificuldade todos os anos devido a extensao enorme
+    do nosso campus UNIFOR, pensando nisso desenvolvemos uma solucao para auxiliar os novatos a irem  para as salas e organizarem seus horarios.</string>
 
     <string-array name="cursos_array">
         <item>Ciencia da computacao</item>

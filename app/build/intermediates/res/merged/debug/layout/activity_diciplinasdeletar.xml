@@ -12,7 +12,7 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DICIPLINA:                HORARIO:      BLOCO:   DELETAR:" />
+        android:text="DICIPLINA:                     HORARIO:   BLOCO:      DELETAR:" />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -25,6 +25,10 @@
     <Button
         android:id="@+id/buttonFinalizarDiciplinas"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/colorPrimary"
+
+        android:background="@drawable/buttonshape"
+
         android:text="FINALIZAR" />
 </LinearLayout>

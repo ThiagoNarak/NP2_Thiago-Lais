@@ -1,4 +1,4 @@
-#Fri May 26 20:22:09 BRT 2017
+#Sun Jun 04 06:32:35 BRT 2017
 base.0=/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_821752c839f2b132a0354aa1561072b9c5f476c8
 renamed.1=classes2.dex
 renamed.0=classes.dex

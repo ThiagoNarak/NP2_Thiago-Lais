@@ -64,12 +64,14 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
         Calendar c=Calendar.getInstance();
 
         Date d = c.getTime();
-        d.getDate();
+        d.setDate(27);
         System.out.println(c.getTime().toString());
 //        System.out.println(c.getWeeksInWeekYear());
 //        c.set(2017,05,12);
 //
-//        mWeekView.goToDate(c);
+        c.getFirstDayOfWeek();
+        c.set(2017,5,26);
+        mWeekView.goToDate(c);
 
         getHoraInicial();
 
@@ -206,6 +208,8 @@ public abstract class BaseActivity extends AppCompatActivity implements WeekView
         return mWeekView;
     }
 public void getHoraInicial(){
+
+
     Banco banco = new Banco(this);
     ArrayList<Diciplinas> diciplinasArrayList=banco.consultaDiciplinas();
     for (Diciplinas e:diciplinasArrayList) {

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
-        "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable-v21/abc_edit_text_material.xml"
-    },
-    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_send.xml",
         "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable-v21/ic_menu_send.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable-v21/ic_menu_share.xml",

@@ -2,8 +2,10 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/uniforcadastro"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context="com.example.thiago.alunomapa.CadastroActivity">
 
     <LinearLayout
@@ -17,14 +19,16 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="65dp"
-
             android:layout_alignLeft="@+id/editTextCurso"
+
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/editTextCurso"
+            android:layout_marginTop="25dp"
             android:layout_weight="0.08"
             android:text="Nome:"
             android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <EditText
@@ -38,7 +42,8 @@
             android:ems="10"
             android:hint="Ex: Thiago"
             android:inputType="textPersonName"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
         <TextView
             android:id="@+id/textView3"
@@ -50,6 +55,8 @@
             android:layout_weight="0.13"
             android:text="Curso:"
             android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <Spinner
@@ -70,9 +77,12 @@
             android:layout_alignLeft="@+id/editTextCurso"
             android:layout_alignStart="@+id/editTextCurso"
             android:layout_below="@+id/editTextCurso"
+            android:layout_marginTop="5dp"
             android:layout_weight="0.08"
             android:text="Matricula:"
             android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <EditText
@@ -98,6 +108,8 @@
             android:layout_alignRight="@+id/textView"
             android:text="Senha:"
             android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <EditText
@@ -115,12 +127,17 @@
 
         <Button
             android:id="@+id/buttonCadastrar"
-            android:layout_width="382dp"
+            android:layout_width="197dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="70pt"
-            android:text="Cadastrar" />
+            android:layout_marginBottom="60pt"
+            android:layout_marginLeft="40pt"
+            android:layout_marginTop="10pt"
+            android:background="@drawable/buttonshape"
+            android:backgroundTint="@color/accent"
+
+            android:text="Cadastrar"
+            android:textAlignment="center"
+            android:textSize="22sp" />
 
     </LinearLayout>
 

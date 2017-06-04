@@ -15,6 +15,8 @@ public class MenuActivity extends AppCompatActivity {
     private Button deleteDatabase;
     private Button cadastrarDiciplinas;
     private Button buttonDrawview;
+    private Button sobre;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +28,19 @@ public class MenuActivity extends AppCompatActivity {
         lista = (Button) findViewById(R.id.buttonMostrarDiciplinas);
         deleteDatabase = (Button) findViewById(R.id.buttonDeletDataBase);
         cadastrarDiciplinas = (Button)findViewById(R.id.buttonCadastrarDiciplinas);
-        buttonDrawview = (Button)findViewById(R.id.mainexperimental);
+        sobre=(Button) findViewById(R.id.button2sobreapp);
 
+            //TESTE DRAWER ACTIVITY
+
+        sobre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(MenuActivity.this,SobreActivity.class);
+                startActivity(intent);
+            }
+        });
+
+            //FIM TESTER DRAWER ACTIVITY
 
         deleteDatabase.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,13 +72,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        buttonDrawview.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(MenuActivity.this,Main2Activity.class);
-                startActivity(intent);
-            }
-        });
+
         cadastrarDiciplinas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

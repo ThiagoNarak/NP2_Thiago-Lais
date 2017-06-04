@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.location.Address;
 import android.location.Criteria;
 import android.location.Geocoder;
+import android.location.GpsSatellite;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -36,6 +37,8 @@ import com.google.android.gms.maps.model.PolylineOptions;
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import static android.R.attr.delay;
 import static android.R.attr.startDelay;
@@ -85,7 +88,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
-    @RequiresApi(api = Build.VERSION_CODES.M)
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
@@ -116,18 +119,21 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }else{
             bloco="lais";
         }
+//        setCriteria();
         double longitude=0;
         double latitude=0;
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
+        try {
 
+                longitude = location.getLongitude();
+                latitude = location.getLatitude();
 
-             longitude = location.getLongitude();
-            latitude = location.getLatitude();
-
-
+            }catch (NullPointerException e){
+                System.out.println(e);
+            }
 
 
 //        Location myLocation = (Location) mMap.getMyLocation();
@@ -154,14 +160,14 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     mMap.addMarker(new MarkerOptions().position(blocoB).title("Bloco B "));
                 } else {
                     if (bloco.contains("Bloco: C")) {
-                        LatLng blocoB = new LatLng(-3.769726, -38.481209);
+                        LatLng blocoC = new LatLng(-3.769726, -38.481209);
                         LatLng currentPosition = new LatLng(latitude, longitude);
                         Polyline line = mMap.addPolyline(new PolylineOptions()
-                                .add(currentPosition, blocoB)
+                                .add(currentPosition, blocoC)
                                 .width(20)
                                 .color(Color.RED));
                         line.setVisible(true);
-                        mMap.addMarker(new MarkerOptions().position(blocoB).title("Bloco C "));
+                        mMap.addMarker(new MarkerOptions().position(blocoC).title("Bloco C "));
                     } else {
                         if (bloco.contains("Bloco: D")) {
 
@@ -186,158 +192,160 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                                 mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco E "));
                             } else {
                                 if (bloco.contains("Bloco: F")) {
-                                    LatLng blocoE = new LatLng(-3.771678, -38.478112);
+                                    LatLng blocoF = new LatLng(-3.771678, -38.478112);
                                     LatLng currentPosition = new LatLng(latitude, longitude);
                                     Polyline line = mMap.addPolyline(new PolylineOptions()
-                                            .add(currentPosition, blocoE)
+                                            .add(currentPosition, blocoF)
                                             .width(20)
                                             .color(Color.RED));
                                     line.setVisible(true);
-                                    mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco F "));
+                                    mMap.addMarker(new MarkerOptions().position(blocoF).title("Bloco F "));
 
                                 } else {
                                     if (bloco.contains("Bloco: H")) {
-                                        LatLng blocoE = new LatLng(-3.767948, -38.480584);
+                                        LatLng blocoH = new LatLng(-3.767948, -38.480584);
                                         LatLng currentPosition = new LatLng(latitude, longitude);
                                         Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                .add(currentPosition, blocoE)
+                                                .add(currentPosition, blocoH)
                                                 .width(20)
                                                 .color(Color.RED));
                                         line.setVisible(true);
-                                        mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco H "));
+                                        mMap.addMarker(new MarkerOptions().position(blocoH).title("Bloco H "));
 
                                     } else {
                                         if (bloco.contains("Bloco: I")) {
-                                            LatLng blocoE = new LatLng(-3.769774, -38.479689);
+                                            LatLng blocoI = new LatLng(-3.769774, -38.479689);
                                             LatLng currentPosition = new LatLng(latitude, longitude);
                                             Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                    .add(currentPosition, blocoE)
+                                                    .add(currentPosition, blocoI)
                                                     .width(20)
                                                     .color(Color.RED));
                                             line.setVisible(true);
-                                            mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco I "));
+                                            mMap.addMarker(new MarkerOptions().position(blocoI).title("Bloco I "));
 
                                         } else {
                                             if (bloco.contains("Bloco: J")) {
-                                                LatLng blocoE = new LatLng(-3.770070, -38.479465);
+                                                LatLng blocoJ = new LatLng(-3.770070, -38.479465);
                                                 LatLng currentPosition = new LatLng(latitude, longitude);
                                                 Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                        .add(currentPosition, blocoE)
+                                                        .add(currentPosition, blocoJ)
                                                         .width(20)
                                                         .color(Color.RED));
                                                 line.setVisible(true);
-                                                mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco J "));
+                                                mMap.addMarker(new MarkerOptions().position(blocoJ).title("Bloco J "));
                                             } else {
                                                 if (bloco.contains("Bloco: K")) {
-                                                    LatLng blocoE = new LatLng(-3.769574, -38.478837);
+                                                    LatLng blocoK = new LatLng(-3.769574, -38.478837);
                                                     LatLng currentPosition = new LatLng(latitude, longitude);
                                                     Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                            .add(currentPosition, blocoE)
+                                                            .add(currentPosition, blocoK)
                                                             .width(20)
                                                             .color(Color.RED));
                                                     line.setVisible(true);
-                                                    mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco K "));
+                                                    mMap.addMarker(new MarkerOptions().position(blocoK).title("Bloco K "));
                                                 } else {
                                                     if (bloco.contains("Bloco: L")) {
-                                                        LatLng blocoE = new LatLng(-3.770810, -38.478394);
+                                                        LatLng blocoL = new LatLng(-3.770810, -38.478394);
                                                         LatLng currentPosition = new LatLng(latitude, longitude);
                                                         Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                                .add(currentPosition, blocoE)
+                                                                .add(currentPosition, blocoL)
                                                                 .width(20)
                                                                 .color(Color.RED));
                                                         line.setVisible(true);
-                                                        mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco L "));
+                                                        mMap.addMarker(new MarkerOptions().position(blocoL).title("Bloco L "));
                                                     } else {
                                                         if (bloco.contains("Bloco: M")) {
-                                                            LatLng blocoE = new LatLng(-3.768859, -38.478654);
+                                                            LatLng blocoM = new LatLng(-3.768859, -38.478654);
                                                             LatLng currentPosition = new LatLng(latitude, longitude);
                                                             Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                                    .add(currentPosition, blocoE)
+                                                                    .add(currentPosition, blocoM)
                                                                     .width(20)
                                                                     .color(Color.RED));
                                                             line.setVisible(true);
-                                                            mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco M "));
+                                                            mMap.addMarker(new MarkerOptions().position(blocoM).title("Bloco M "));
                                                         } else {
                                                             if (bloco.contains("Bloco: N")) {
-                                                                LatLng blocoE = new LatLng(-3.768125, -38.479196);
+                                                                LatLng blocoN = new LatLng(-3.768125, -38.479196);
                                                                 LatLng currentPosition = new LatLng(latitude, longitude);
                                                                 Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                                        .add(currentPosition, blocoE)
+                                                                        .add(currentPosition, blocoN)
                                                                         .width(20)
                                                                         .color(Color.RED));
                                                                 line.setVisible(true);
-                                                                mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco N "));
+                                                                mMap.addMarker(new MarkerOptions().position(blocoN).title("Bloco N "));
                                                             } else {
                                                                 if (bloco.contains("Bloco: O")) {
-                                                                    LatLng blocoE = new LatLng(-3.767770, -38.479352);
+                                                                    LatLng blocoO = new LatLng(-3.767770, -38.479352);
                                                                     LatLng currentPosition = new LatLng(latitude, longitude);
                                                                     Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                                            .add(currentPosition, blocoE)
+                                                                            .add(currentPosition, blocoO)
                                                                             .width(20)
                                                                             .color(Color.RED));
                                                                     line.setVisible(true);
-                                                                    mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco O "));
+                                                                    mMap.addMarker(new MarkerOptions().position(blocoO).title("Bloco O "));
                                                                 } else {
                                                                     if (bloco.contains("Bloco: P")) {
-                                                                        LatLng blocoE = new LatLng(-3.767754, -38.479332);
+                                                                        LatLng blocoP = new LatLng(-3.767754, -38.479332);
                                                                         LatLng currentPosition = new LatLng(latitude, longitude);
                                                                         Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                                                .add(currentPosition, blocoE)
+                                                                                .add(currentPosition, blocoP)
                                                                                 .width(20)
                                                                                 .color(Color.RED));
                                                                         line.setVisible(true);
-                                                                        mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco P "));
+                                                                        mMap.addMarker(new MarkerOptions().position(blocoP).title("Bloco P "));
                                                                     } else {
                                                                         if (bloco.contains("Bloco: Q")) {
-                                                                            LatLng blocoE = new LatLng(-3.767451, -38.479478);
+                                                                            LatLng blocoQ = new LatLng(-3.767451, -38.479478);
                                                                             LatLng currentPosition = new LatLng(latitude, longitude);
                                                                             Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                                                    .add(currentPosition, blocoE)
+                                                                                    .add(currentPosition, blocoQ)
                                                                                     .width(20)
                                                                                     .color(Color.RED));
                                                                             line.setVisible(true);
-                                                                            mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco Q "));
+                                                                            mMap.addMarker(new MarkerOptions().position(blocoQ).title("Bloco Q "));
                                                                         } else {
                                                                             if (bloco.contains("Bloco: R")) {
-                                                                                LatLng blocoE = new LatLng(-3.767122, -38.479617);
+                                                                                LatLng blocoR = new LatLng(-3.767122, -38.479617);
                                                                                 LatLng currentPosition = new LatLng(latitude, longitude);
                                                                                 Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                                                        .add(currentPosition, blocoE)
+                                                                                        .add(currentPosition, blocoR)
                                                                                         .width(20)
                                                                                         .color(Color.RED));
                                                                                 line.setVisible(true);
-                                                                                mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco Q "));
+                                                                                mMap.addMarker(new MarkerOptions().position(blocoR).title("Bloco R "));
                                                                             } else {
                                                                                 if (bloco.contains("Bloco: S")) {
-                                                                                    LatLng blocoE = new LatLng(-3.766803, -38.479756);
+                                                                                    LatLng blocoS = new LatLng(-3.766803, -38.479756);
                                                                                     LatLng currentPosition = new LatLng(latitude, longitude);
                                                                                     Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                                                            .add(currentPosition, blocoE)
+                                                                                            .add(currentPosition, blocoS)
                                                                                             .width(20)
                                                                                             .color(Color.RED));
                                                                                     line.setVisible(true);
-                                                                                    mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco S "));
+                                                                                    mMap.addMarker(new MarkerOptions().position(blocoS).title("Bloco S "));
                                                                                 } else {
                                                                                     if (bloco.contains("Bloco: T")) {
-                                                                                        LatLng blocoE = new LatLng(-3.767611, -38.480256);
+                                                                                        LatLng blocoT = new LatLng(-3.767611, -38.480256);
                                                                                         LatLng currentPosition = new LatLng(latitude, longitude);
                                                                                         Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                                                                .add(currentPosition, blocoE)
+                                                                                                .add(currentPosition, blocoT)
                                                                                                 .width(20)
                                                                                                 .color(Color.RED));
                                                                                         line.setVisible(true);
-                                                                                        mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco T "));
+                                                                                        mMap.addMarker(new MarkerOptions().position(blocoT).title("Bloco T "));
                                                                                     } else {
                                                                                         if (bloco.contains("Bloco: Z")) {
-                                                                                            LatLng blocoE = new LatLng(-3.769283, -38.474495);
+                                                                                            LatLng blocoZ = new LatLng(-3.769283, -38.474495);
                                                                                             LatLng currentPosition = new LatLng(latitude, longitude);
                                                                                             Polyline line = mMap.addPolyline(new PolylineOptions()
-                                                                                                    .add(currentPosition, blocoE)
+                                                                                                    .add(currentPosition, blocoZ)
                                                                                                     .width(20)
                                                                                                     .color(Color.RED));
                                                                                             line.setVisible(true);
-                                                                                            mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco Z "));
+                                                                                            mMap.addMarker(new MarkerOptions().position(blocoZ).title("Bloco Z "));
 
+                                                                                        }else{
+                                                                                            setMapTodosOsblocos();
                                                                                         }
                                                                                     }
                                                                                 }
@@ -371,7 +379,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         mMap.setMyLocationEnabled(true);
+
+        //reDesenhar(new LatLng(latitude,longitude));
     }
+
+
 
     @Override
     public void onPause() {
@@ -379,5 +391,68 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         // Remove the activity when its off the screen
         finish();
+    }
+    public void setMapTodosOsblocos(){
+        LatLng blocoA = new LatLng(-3.771021, -38.481224);
+        mMap.addMarker(new MarkerOptions().position(blocoA).title("Bloco A "));
+
+
+        LatLng blocoB = new LatLng(-3.770667, -38.481325);
+        mMap.addMarker(new MarkerOptions().position(blocoB).title("Bloco B "));
+
+        LatLng blocoC = new LatLng(-3.769726, -38.481209);
+        mMap.addMarker(new MarkerOptions().position(blocoC).title("Bloco C "));
+
+        LatLng blocoD = new LatLng(-3.770544, -38.480403);
+        mMap.addMarker(new MarkerOptions().position(blocoD).title("Bloco D "));
+
+        LatLng blocoE = new LatLng(-3.770271, -38.481570);
+        mMap.addMarker(new MarkerOptions().position(blocoE).title("Bloco E "));
+
+        LatLng blocoF = new LatLng(-3.771678, -38.478112);
+        mMap.addMarker(new MarkerOptions().position(blocoF).title("Bloco F "));
+
+        LatLng blocoH = new LatLng(-3.767948, -38.480584);
+        mMap.addMarker(new MarkerOptions().position(blocoH).title("Bloco H "));
+
+        LatLng blocoI = new LatLng(-3.769774, -38.479689);
+        mMap.addMarker(new MarkerOptions().position(blocoI).title("Bloco I "));
+
+        LatLng blocoJ = new LatLng(-3.770070, -38.479465);
+        mMap.addMarker(new MarkerOptions().position(blocoJ).title("Bloco J "));
+
+        LatLng blocoK = new LatLng(-3.769574, -38.478837);
+        mMap.addMarker(new MarkerOptions().position(blocoK).title("Bloco K "));
+
+        LatLng blocoL = new LatLng(-3.768859, -38.478654);
+        mMap.addMarker(new MarkerOptions().position(blocoL).title("Bloco L "));
+
+        LatLng blocoM = new LatLng(-3.768859, -38.478654);
+        mMap.addMarker(new MarkerOptions().position(blocoM).title("Bloco M "));
+
+        LatLng blocoN = new LatLng(-3.768125, -38.479196);
+        mMap.addMarker(new MarkerOptions().position(blocoN).title("Bloco N "));
+
+        LatLng blocoO = new LatLng(-3.767770, -38.479352);
+        mMap.addMarker(new MarkerOptions().position(blocoO).title("Bloco O "));
+
+        LatLng blocoP = new LatLng(-3.767754, -38.479332);
+        mMap.addMarker(new MarkerOptions().position(blocoP).title("Bloco P "));
+
+        LatLng blocoQ = new LatLng(-3.767451, -38.479478);
+        mMap.addMarker(new MarkerOptions().position(blocoQ).title("Bloco Q "));
+
+        LatLng blocoR = new LatLng(-3.767122, -38.479617);
+        mMap.addMarker(new MarkerOptions().position(blocoR).title("Bloco R"));
+
+        LatLng blocoS = new LatLng(-3.766803, -38.479756);
+        mMap.addMarker(new MarkerOptions().position(blocoS).title("Bloco S "));
+
+        LatLng blocoT = new LatLng(-3.767611, -38.480256);
+        mMap.addMarker(new MarkerOptions().position(blocoT).title("Bloco T "));
+
+        LatLng blocoZ = new LatLng(-3.769283, -38.474495);
+        mMap.addMarker(new MarkerOptions().position(blocoZ).title("Bloco Z "));
+
     }
 }

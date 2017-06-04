@@ -4,83 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/menu"
     tools:context="com.example.thiago.alunomapa.MenuActivity">
 
-    <RelativeLayout
-        android:layout_width="370dp"
-        android:layout_height="450dp"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="2dp">
+    <Button
+        android:id="@+id/buttonMostrarDiciplinas"
 
-        <Button
-            android:id="@+id/buttonMostrarDiciplinas"
-            android:layout_width="340dp"
-            android:layout_height="50dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="76dp"
-            android:text="Minhas diciplinas" />
 
-        <Button
-            android:id="@+id/buttonMapaSemanal"
-            android:layout_width="355dp"
-            android:layout_height="50dp"
-            android:layout_alignEnd="@+id/buttonMostrarDiciplinas"
-            android:layout_alignLeft="@+id/buttonMostrarDiciplinas"
-            android:layout_alignRight="@+id/buttonMostrarDiciplinas"
-            android:layout_alignStart="@+id/buttonMostrarDiciplinas"
-            android:layout_below="@+id/buttonMostrarDiciplinas"
-            android:layout_marginTop="71dp"
-            android:text="Diciplinas semanais" />
+        android:layout_width="143dp"
+        android:layout_height="95dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="@color/colormenu"
+        android:text="Minhas diciplinas"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonMapaSemanal"
+        android:layout_marginRight="8dp" />
 
-        <Button
-            android:id="@+id/buttonMapaUnifor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/buttonMapaSemanal"
-            android:layout_alignLeft="@+id/buttonMapaSemanal"
-            android:layout_alignRight="@+id/buttonMapaSemanal"
-            android:layout_alignStart="@+id/buttonMapaSemanal"
-            android:layout_below="@+id/buttonMapaSemanal"
-            android:layout_marginTop="74dp"
-            android:text="Mapa Unifor" />
+    <Button
+        android:id="@+id/buttonMapaSemanal"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="143dp"
 
-        <Button
-            android:id="@+id/buttonDeletDataBase"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/buttonMapaUnifor"
-            android:layout_alignParentBottom="true"
-            android:layout_alignRight="@+id/buttonMapaUnifor"
-            android:text="Deletar Todas as Diciplinas"
-            android:textSize="8sp" />
+        android:layout_height="95dp"
+        android:layout_marginLeft="186dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="@color/colormenu"
+        android:text="Diciplinas semanais"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="63dp" />
 
-        <Button
-            android:id="@+id/buttonCadastrarDiciplinas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/buttonMapaUnifor"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/buttonMapaUnifor"
-            android:layout_alignTop="@+id/buttonDeletDataBase"
-            android:layout_toStartOf="@+id/textView7"
-            android:text="Cadastrar Disciplinas"
-            android:textSize="8sp" />
+    <Button
+        android:id="@+id/buttonMapaUnifor"
+        android:layout_width="143dp"
+        android:layout_height="95dp"
 
-        <Button
-            android:id="@+id/mainexperimental"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="65dp"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="17dp"
-            android:text="Drawview experimental"
-            android:layout_alignParentTop="true"
-            android:layout_alignLeft="@+id/buttonMostrarDiciplinas"
-            android:layout_alignStart="@+id/buttonMostrarDiciplinas" />
+        android:layout_marginLeft="29dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="@color/colormenu"
+        android:text="Mapa Unifor"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMostrarDiciplinas" />
 
-    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonDeletDataBase"
+        android:layout_width="213dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="73dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="@color/colorVermelha"
+        android:text="Deletar Todas as Diciplinas"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMapaUnifor" />
+
+    <Button
+        android:id="@+id/buttonCadastrarDiciplinas"
+        android:layout_width="143dp"
+
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="@color/colorVerde"
+
+        android:text="Cadastrar Disciplinas"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMapaSemanal"
+        app:layout_constraintLeft_toRightOf="@+id/buttonMapaUnifor" />
+    <Button
+        android:id="@+id/button2sobreapp"
+        android:layout_width="59dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="-2dp"
+        android:background="?android:attr/alertDialogIcon"
+        app:layout_constraintLeft_toRightOf="@+id/buttonMostrarDiciplinas"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

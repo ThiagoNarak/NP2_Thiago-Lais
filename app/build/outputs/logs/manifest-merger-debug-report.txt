@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:2:1-69:12
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:2:1-70:12
 	package
 		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:3:5-43
 		INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManife
 	android:name
 		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:11:22-71
 application
-ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:13:5-67:19
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:13:5-68:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/toliveira/.android/build-cache/604feabfa57d9aba8f16161cd0f6a829c26531f9/output/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] /home/toliveira/.android/build-cache/0af7a2c2bc38ec1d4f83aa040da177d3777dba88/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/AndroidManifest.xml:29:5-20
@@ -46,17 +46,17 @@ MERGED from [com.android.support:support-compat:25.3.1] /home/toliveira/.android
 	android:supportsRtl
 		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:18:9-35
 	android:roundIcon
-		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:17:9-54
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:17:9-41
 	android:allowBackup
 		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:14:9-35
 	android:icon
-		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:15:9-43
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:15:9-36
 	android:theme
 		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:19:9-40
 activity#com.example.thiago.alunomapa.MainActivity
 ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:20:9-28:20
 	android:label
-		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:22:13-41
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:22:13-42
 	android:name
 		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:21:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
@@ -126,9 +126,13 @@ ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManife
 	android:name
 		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:63:13-42
 activity#com.example.thiago.alunomapa.vazia
-ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:66:9-52
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:66:9-43
 	android:name
 		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:66:19-40
+activity#com.example.thiago.alunomapa.SobreActivity
+ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:67:9-60
+	android:name
+		ADDED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml:67:19-48
 uses-sdk
 INJECTED from /home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/toliveira/.android/build-cache/604feabfa57d9aba8f16161cd0f6a829c26531f9/output/AndroidManifest.xml:5:5-7:41

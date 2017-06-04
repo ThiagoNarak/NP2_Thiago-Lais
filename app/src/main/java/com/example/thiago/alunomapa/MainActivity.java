@@ -31,10 +31,9 @@ public class MainActivity extends AppCompatActivity {
             matriculaBanco = banco.retornarMatriculaBanco();
         }catch (Exception e){
 
-
+            System.out.println("NAO FUNCIONOU O BANCO.");
         }
         //atribuicao a botoes
-
         buttonLogin = (Button)findViewById(R.id.buttonLogin);
         textCadastro= (TextView)findViewById(R.id.textViewCadastrar);
         textCadastro.setText("Click aqui para Cadastrar.");
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
             matricula.setText(matriculaBanco.getMatricula());
             senha.setText(matriculaBanco.getSenha());
         }
-
 
 
 

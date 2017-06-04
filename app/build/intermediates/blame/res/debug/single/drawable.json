@@ -4,12 +4,16 @@
         "source": "/home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
-        "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/notification_bg_low.xml"
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel5vader.jpg",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel5vader.jpg"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
         "source": "/home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/notification_bg_low.xml"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
@@ -24,6 +28,10 @@
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel1vader.jpg",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel1vader.jpg"
+    },
+    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/notification_tile_bg.xml"
     },
@@ -34,6 +42,18 @@
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
         "source": "/home/toliveira/.android/build-cache/4d7ee5f62a4ff8f9742fb1f827647cf217566f6e/output/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel6.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel6.png"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel10.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel10.png"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel8vader.jpg",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel8vader.jpg"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
@@ -76,6 +96,14 @@
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel6vader.jpg",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel6vader.jpg"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel11vader.jpg",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel11vader.jpg"
+    },
+    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
@@ -116,6 +144,14 @@
         "source": "/home/toliveira/.android/build-cache/0af7a2c2bc38ec1d4f83aa040da177d3777dba88/output/res/drawable/design_fab_background.xml"
     },
     {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel2vader.jpg",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel2vader.jpg"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel7.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel7.png"
+    },
+    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
         "source": "/home/toliveira/.android/build-cache/0af7a2c2bc38ec1d4f83aa040da177d3777dba88/output/res/drawable/design_snackbar_background.xml"
     },
@@ -132,8 +168,20 @@
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_btn_radio_material.xml"
     },
     {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel1.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel1.png"
+    },
+    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel4.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel4.png"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel9vader.jpg",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel9vader.jpg"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
@@ -152,6 +200,10 @@
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_cab_background_top_material.xml"
     },
     {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel7vader.jpg",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel7vader.jpg"
+    },
+    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_tab_indicator_material.xml"
     },
@@ -160,8 +212,16 @@
         "source": "/home/toliveira/.android/build-cache/0af7a2c2bc38ec1d4f83aa040da177d3777dba88/output/res/drawable/navigation_empty_icon.xml"
     },
     {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel3.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel3.png"
+    },
+    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/design_password_eye.xml",
         "source": "/home/toliveira/.android/build-cache/0af7a2c2bc38ec1d4f83aa040da177d3777dba88/output/res/drawable/design_password_eye.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/buttonshape.xml",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/buttonshape.xml"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
@@ -170,6 +230,14 @@
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel9.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel9.png"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel3vader.jpg",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel3vader.jpg"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
@@ -184,8 +252,28 @@
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel4vader.jpg",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel4vader.jpg"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel2.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel2.png"
+    },
+    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel10vader.jpg",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel10vader.jpg"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel5.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel5.png"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel8.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel8.png"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_vector_test.xml",
@@ -226,6 +314,10 @@
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
         "source": "/home/toliveira/.android/build-cache/fdd15f95608ef625514f4471074465134084281a/output/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/pixel11.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/drawable/pixel11.png"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_normal.xml",

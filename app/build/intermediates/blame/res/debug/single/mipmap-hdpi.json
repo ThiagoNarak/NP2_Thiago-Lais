@@ -1,7 +1,23 @@
 [
     {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/mipmap-hdpi/menu.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/mipmap-hdpi/menu.png"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/mipmap-hdpi/fotouniforentrada.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/mipmap-hdpi/fotouniforentrada.png"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/mipmap-hdpi/uniforcadastro.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/mipmap-hdpi/uniforcadastro.png"
+    },
+    {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
         "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/mipmap-hdpi/icon.png",
+        "source": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/src/main/res/mipmap-hdpi/icon.png"
     },
     {
         "merged": "/home/toliveira/Documentos/NP2_Thiago-Lais/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
